@@ -18,6 +18,11 @@
     color: #d4d2d1;
     cursor: pointer;
 }
+
+.topMenu ul li:hover{
+    color: #9492FF;
+}
+
 .topImgMoon img{
     width: 20px;
     margin-top: -2px;
