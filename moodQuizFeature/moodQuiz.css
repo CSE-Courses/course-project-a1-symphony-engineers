@@ -19,9 +19,16 @@
     cursor: pointer;
 }
 
-.topMenu ul li:hover{
+
+a{
+    text-decoration: none;
+    color: #d4d2d1;
+}
+
+a:hover{
     color: #9492FF;
 }
+
 
 .topImgMoon img{
     width: 20px;
