@@ -17,8 +17,10 @@
     margin: 0 25px;
     color: #d4d2d1;
     cursor: pointer;
-    
 }
+.topMenu ul li:hover {
+    color: #19d7f8;
+  }
 
 .logo img{
     width: 150px;
@@ -59,7 +61,7 @@
     width: 90%;
     height: 70%;
     top: 25%;
-    left: 70px;
+    left: 5%;
     position: absolute;
     color:white;
 }
@@ -73,3 +75,33 @@
     position: relative;
     margin-left: 40px;
 }
+
+.tilesContainer{
+    width: 100%;
+    height: 1500px;
+    background: #42455a;
+}
+.flex-container {
+    display: flex;
+    height: 1500px;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    align-content: stretch;
+    background-color: #42455a;
+  }
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 30%;
+    margin: 10px;
+    border-radius: 45px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+  }
