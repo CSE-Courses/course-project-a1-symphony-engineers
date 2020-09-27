@@ -116,3 +116,12 @@ small{
     color: #19dafa;
     letter-spacing: 3px;
 }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family: sans-serif;
+    background-color: pink;
+    color: black;
+}
