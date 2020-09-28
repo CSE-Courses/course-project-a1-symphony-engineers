@@ -312,6 +312,10 @@
   transform: none;
 }
 
+.footerContainer{
+    background: #42455a ;
+}
+
 footer {
     display: flex;
     justify-content: center;
