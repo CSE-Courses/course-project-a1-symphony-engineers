@@ -4,7 +4,42 @@
     <link rel="stylesheet" href="homePage.css">
     <script src="homePage.js"></script>
 </head>
-<body>
+<body>  
+    <div class="burgerMenu">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
+                <li class="active"><a href="homePage.html">Home</a></li>
+                <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
+                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+                <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    
     <div class="mainContainer">
         <div class="topMenu">
             <ul>
@@ -50,5 +85,10 @@
             <div>Something</div>  
         </div>
     </div>
+
+    <br><br><br>
+    <footer>
+        © Copyright 2020 Symphony Engineers, All Rights Reserved.
+     </footer>
 </body>
 </html>
