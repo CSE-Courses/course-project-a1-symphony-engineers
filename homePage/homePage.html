@@ -1,10 +1,45 @@
 <html>
 <head>
-    <title> Mood Quiz </title>
+    <title> Serenity: Home Page </title>
     <link rel="stylesheet" href="homePage.css">
     <script src="homePage.js"></script>
 </head>
-<body>
+<body>  
+    <div class="burgerMenu">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
+                <li class="active"><a href="homePage.html">Home</a></li>
+                <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
+                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+                <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    
     <div class="mainContainer">
         <div class="topMenu">
             <ul>
@@ -17,36 +52,46 @@
             <li class="signup-btn"><span>Sign Up</span></a></li>
             </ul>
         </div>
-        <p>
-        <div class="banner">
-            <div class="page-text">
-                <h1>Explore Symphony</h1>
-                <p>
-                <p>Choose from Music, Meditation, Yoga </p></p>
-            </div>
-            <!--<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">-->
-            </iframe>
+    </div>
+
+    <div class="banner-container">
+        <div>
+            <h1>Explore Serenity</h1>
+            <p>Choose from Music, Meditation, Yoga </p>
         </div>
-        </p>
     </div>
+
+    <div class="iframe-container">
+        <div class="innerIFrameContainer">
+            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+  </div>
+
+    <div class="tilesContainer">
+        <div class="flex-container">
+            <div>Music</div>
+            <div>Space</div>
+            <div>Nature</div>  
+            <div>Meditation</div>
+            <div>Cindrella, By Michael Jackson</div>
+            <div>The Nile, By Arman Hoque</div>  
+            <div>Yoga</div>
+            <div>Downward Dog</div>
+            <div>Nirvana</div>  
+            <div>Something</div>
+            <div>Something</div>
+            <div>Something</div>  
+        </div>
+    </div>
+    <div class="footerContainer">
+        <footer>
+            © Copyright 2020 Symphony Engineers, All Rights Reserved.
+        </footer>
+    </div>
+
     
-    <p> 
-        <div class="tilesContainer">
-            <div class="flex-container">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>  
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>  
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>  
-                <div>10</div>
-                <div>11</div>
-                <div>12</div>  
-            </div>
-        </p>
-    </div>
+    
 </body>
 </html>
