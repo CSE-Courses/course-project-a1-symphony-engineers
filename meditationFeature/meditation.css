@@ -57,7 +57,7 @@ a:hover{
 
 .bodycs{
   width: 100%;
-  height: 200%;
+  height: 90%;
   top: 13%;
   position: absolute;
   background: #42455a;
@@ -131,5 +131,15 @@ a:hover{
 .MM iframe{
   margin-left: 50px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-family: sans-serif;
+  background-color: pink;
+  color: black;
+}
+
 
 
