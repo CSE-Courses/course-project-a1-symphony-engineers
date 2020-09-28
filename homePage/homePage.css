@@ -138,12 +138,16 @@
     width: 100%;
     margin-left: 13%;
     font-size: 20px;
-    color: #d4d2d1;
+    color: #ffff;
     background-color: #42455a;
+}
+.banner-container > div h2{
+  color: #42455a;
 }
 .banner-container > div p{
     font-size: 15px;
     color: #919191;
+    
 }
 
 
