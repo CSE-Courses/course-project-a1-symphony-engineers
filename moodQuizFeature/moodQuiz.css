@@ -10,8 +10,13 @@
 }
 
 
-.active {
-    color: green !important;
+.active-custom {
+    background-color: #42455a;
+    color: white;
+}
+
+.active-custom a{
+    color: #19dafa !important;
 }
 
 /* Remove the jumbotron's default bottom margin */ 
