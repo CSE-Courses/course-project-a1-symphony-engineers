@@ -36,15 +36,6 @@ a:hover{
   color: #9492FF;
 }
 
-.logo img{
-  width: 20px;
-  margin-top: -2px;
-  margin-right: 30px;
-}
-.active{
-  color: #19dafa !important;
-}
-
 .topImgMoon img{
   width: 25px;
   margin-top: -5px;
@@ -70,83 +61,6 @@ a:hover{
   display: block;
   padding: 8px 22px;
 }
-
-
-/*Body Styling Anant */
-
-body {
-  background-color: #42455A;
-}
-
-h2 {
-  color: #19D7F8;
-  font-family: sans-serif;
-  text-align: center;
-}
-
-h4 { 
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-    color: #19D7F8;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-.soundBlocks { 
-    background-color: white;
-    height: 150px;
-    width: 15%;
-    border-radius: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* background-color: rgb(12, 248, 236); */
-  padding: 10px;
-  /* width: 100%; */
-  border-radius: 20px;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px; 
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  height: 100px;
-  /* width: 150px; */
-  font-family: sans-serif;
-  font-size: 30px;
-  border-radius: 20px;
-  text-align: center;
-  color: rgb(0, 0, 0, 0.7);
-  transition: width 2s, height 2s, ease 0.5s;
-}
-
-.grid-item:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-  font-family: sans-serif;
-  background-color: pink;
-  color: black;
-}
-
-/*Anant*/
-
-
-
-
-
 
 .bodycs{
   width: 100%;
