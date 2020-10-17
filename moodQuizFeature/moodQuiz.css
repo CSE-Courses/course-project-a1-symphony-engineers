@@ -37,6 +37,8 @@
 }
 
 
+
+
 /*
 .mtnPicture{
     width: 50%;
@@ -55,6 +57,18 @@ small{
     color: #19dafa;
     letter-spacing: 3px;
 }
+
+small{
+    border: 1px;
+    border-radius: 10px;
+    
+    padding: 3px 3px;
+    
+    background-image: linear-gradient(#42455a, #42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+
 /* Add a gray background color and some padding to the footer */
 
 footer {
