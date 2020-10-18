@@ -37,6 +37,12 @@ margin-bottom: 0;
     background-color: #80839b;
 }
 
+#categoryBar .container.text-center a{
+    font: bold;
+    color:whitesmoke;
+    background-color: #80839b;
+}
+
 /* Add a gray background color and some padding to the footer */
 footer {
 background-color: pink;
