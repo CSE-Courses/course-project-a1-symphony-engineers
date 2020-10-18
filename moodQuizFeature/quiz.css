@@ -1,0 +1,60 @@
+.navbar :hover { 
+    color: #9492FF !important;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+  background-color: #42455a;
+  border-color: #42455a;
+}
+
+
+.active-custom {
+    background-color: #42455a;
+    color: white;
+}
+
+.active-custom a{
+    color: #19dafa !important;
+}
+
+
+
+/*
+.header{
+    color:white;
+}
+.headerText{
+    width: 50%;
+    float: left;
+}
+
+.headerText p{
+    color: #919191;
+}
+
+
+a{
+    text-decoration: none;
+    color: #19dafa;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #CD8DEF;
+}
+
+
+*/
+
+
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+  background-color: pink;
+  padding: 15px;
+  height: 50px;
+  padding-bottom: 25px;
+}
