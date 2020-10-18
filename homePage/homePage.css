@@ -25,6 +25,18 @@ color: #19dafa !important;
 margin-bottom: 0;
 }
 
+#categoryBar{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background-color: #80839b;
+}
+
+#categoryBar .container.text-center{
+    font: bold;
+    color:whitesmoke;
+    background-color: #80839b;
+}
+
 /* Add a gray background color and some padding to the footer */
 footer {
 background-color: pink;
@@ -46,7 +58,8 @@ padding: 5px;
 
 .panel-body iframe{
 border-radius: 20px;
-
+width: 100% !important;
+height: 100% !important;
 }
 
 .panel-body img{
