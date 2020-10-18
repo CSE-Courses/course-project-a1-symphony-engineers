@@ -19,28 +19,6 @@
     color: #19dafa !important;
 }
 
-.img-responsive{
-    transition: transform .2s;
-}
-
-.img-responsive:hover{
-    transform: scale(1.1);
-}
-
-
-.header{
-    color:white;
-}
-.headerText{
-    width: 50%;
-    float: left;
-}
-
-.headerText p{
-    color: #919191;
-}
-
-
 a{
     text-decoration: none;
     color: #19dafa;
@@ -51,9 +29,19 @@ a:hover{
     color: #CD8DEF;
 }
 
+.header{
+    color:white;
+}
+
+
+.headerText p{
+    color: #919191;
+    font-size: 16px;
+}
 
 .btn{
     text-decoration: none;
+    color: white;
     padding: 3px 3px;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -86,10 +74,13 @@ a:hover{
     font-size: 15px;
 }
 
+
 .quiz {
     color: #19dafa;
     letter-spacing: 3px;
 }
+
+
 
 /* Add a gray background color and some padding to the footer */
 
