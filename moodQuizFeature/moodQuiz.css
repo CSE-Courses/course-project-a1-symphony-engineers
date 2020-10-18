@@ -19,6 +19,13 @@
     color: #19dafa !important;
 }
 
+.img-responsive{
+    transition: transform .2s;
+}
+
+.img-responsive:hover{
+    transform: scale(1.1);
+}
 
 
 .header{
