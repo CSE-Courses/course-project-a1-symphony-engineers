@@ -19,38 +19,43 @@ border-color: #42455a;
   color: #19dafa !important;
 }
 
+.img-responsive{
+  transition: transform .2s;
+}
+
+
+.header{
+  color:white;
+}
+.headerText{
+  width: 50%;
+  float: left;
+}
+
+.headerText p{
+  color: #919191;
+}
+
+
 /* Remove the jumbotron's default bottom margin */ 
 .jumbotron {
 margin-bottom: 0;
 }
 
-.header1{
-  height: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header1 h1{
-  color:white;
-  margin:0;
+
+.btn{
+  text-decoration: none;
+  padding: 3px 3px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+  font-size: 20px;
 }
 
-.header2{
-  height: 10em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header2 h1{
-  color:white;
-  margin:0;
-}
-
-.link-btn{
-  height: 28em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn span{
+  display: block;
+  padding: 10px 22px;
 }
 
 /* Add a gray background color and some padding to the footer */
