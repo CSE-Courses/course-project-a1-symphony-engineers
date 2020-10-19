@@ -1,78 +1,75 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Mood Quiz </title>
-    <link rel="stylesheet" href="moodQuiz.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Serenity</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="moodQuiz.css">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
-<body style="background-color:#42455a;">
+<body style="background-color: #42455a"></bodystyle>
 
-    <div class="burgerMenu">
-        <nav role="navigation">
-            <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-              <span></span>
-              <span></span>
-              <span></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-              <ul id="menu">
-                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
-                <li class="active"><a href="../homePage/homePage.html">Home</a></li>
-                <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
-                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
-                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
-                <li><a href="moodQuiz.html">Mood Check</a></li>
-              </ul>
-            </div>
-        </nav>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <a class="navbar-brand" href="#"><img src="moon.png"></a> -->
     </div>
-    <div class="container">
-        <div class="topMenu">
-            <ul>
-            <li class="topImgMoon"><a href= "../homePage/homePage.html"><img src="moon.png"></a></li>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav">
+            <li><a href="../homePage/homePage.html"><img src="moon.png" alt="N/A" width="25px" height="25px"></a></li>
             <li><a href="../homePage/homePage.html">Home</a></li>
-            <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
-            <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+            <li><a href= "../meditationFeature/meditation.html">Meditation</a></li>
             <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
-            <li class="current"><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
-            <li><a href="#" class="signupButton"><span>Sign Up</span></a></li>
-            </ul>
-        </div>
-        <div class="header">
-            <div class="headerText">
-                <h1> Relaxation starts here. </h1>
-                <p>Get started today.  Healthier minds = healthier lives.</p>
-                <div class="playButton">
-                    <div class="playButtonInner"><i class="fa fa-play"></i></div>
-                    <small><b>TAKE QUIZ</b></small>
-                </div>
+            <li class="active-custom"><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+            <li><a href= "../yogaFeature/yoga.html">Yoga</a></li>
+        </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    
+
+<div class="container">
+    <div class="header">
+        <div class="headerText">
+            <h1> Relaxation starts here. </h1>
+            <br>
+            <p>Get started today.  Healthier minds = healthier lives.</p>
+            <div class="playButton">
+                <div class="playButtonInner"><i class="fa fa-play"></i></div>
+                <br><br>
+                <button class="btn quiz"><a href="../moodQuizFeature/warning.html"><span>TAKE QUIZ</span></a></button>
             </div>
-            <div class="mtnPicture">
-                <img src="mountain.png">
-            </div>
         </div>
+        
+        <img class="img-responsive" src="mountain.png" alt="Chania" width="460" height="345"> 
 
     </div>
+
+    </div>
+
     
-<br><br><br>
-    <footer>
-        © Copyright 2020 Symphony Engineers, All Rights Reserved.
-     </footer>
     
+<br><br>
+<footer class="container-fluid text-center">
+  <p> © Copyright 2020 Symphony Engineers, All Rights Reserved.</p>  
+</footer>
+
 </body>
 </html>

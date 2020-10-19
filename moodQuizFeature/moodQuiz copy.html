@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title> Mood Quiz </title>
+    <link rel="stylesheet" href="moodQuiz copy.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body style="background-color:#42455a;">
+
+    <div class="burgerMenu">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
+                <li class="active"><a href="../homePage/homePage.html">Home</a></li>
+                <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
+                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+                <li><a href="moodQuiz.html">Mood Check</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="topMenu">
+            <ul>
+            <li class="topImgMoon"><a href= "../homePage/homePage.html"><img src="moon.png"></a></li>
+            <li><a href="../homePage/homePage.html">Home</a></li>
+            <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
+            <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+            <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+            <li class="current"><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+            <li><a href="#" class="signupButton"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <div class="headerText">
+                <h1> Relaxation starts here. </h1>
+                <p>Get started today.  Healthier minds = healthier lives.</p>
+                <div class="playButton">
+                    <div class="playButtonInner"><i class="fa fa-play"></i></div>
+                    <small><b>TAKE QUIZ</b></small>
+                </div>
+            </div>
+            <div class="mtnPicture">
+                <img src="mountain.png">
+            </div>
+        </div>
+
+    </div>
+    
+<br><br><br>
+    <footer>
+        © Copyright 2020 Symphony Engineers, All Rights Reserved.
+     </footer>
+    
+</body>
+</html>

@@ -1,98 +1,210 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title> Serenity: Home Page </title>
-    <link rel="stylesheet" href="homePage.css">
-    <script src="homePage.js"></script>
+  <title>Serenity</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="homePage.css">
 </head>
-<body>  
-    <div class="burgerMenu">
-        <nav role="navigation">
-            <div id="menuToggle">
-              <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-              <input type="checkbox" />
-              
-              <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-              <span></span>
-              <span></span>
-              <span></span>
-              
-              <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-              <ul id="menu">
-                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
-                <li class="active"><a href="homePage.html">Home</a></li>
-                <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
-                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
-                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
-                <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
-              </ul>
-            </div>
-        </nav>
+
+<body style="background-color: #42455a"></bodystyle>
+
+<!--Scroll To Top Button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <a class="navbar-brand" href="#"><img src="moon.png"></a> -->
     </div>
-    
-    <div class="mainContainer">
-        <div class="topMenu">
-            <ul>
-            <li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>
-            <li class="active"><a href="homePage.html">Home</a></li>
-            <li><a href="../meditationFeature/meditation.html">Meditation</a></li>
-            <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav">
+            <li><a href="homePage.html"><img src="moon.png" alt="N/A" width="25px" height="25px"></a></li>
+            <li class="active-custom"><a href="homePage.html">Home</a></li>
+            <li><a href= "../meditationFeature/meditation.html">Meditation</a></li>
             <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
             <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
-            <li class="signup-btn"><span>Sign Up</span></a></li>
-            </ul>
-        </div>
-    </div>
+            <li><a href= "../yogaFeature/yoga.html">Yoga</a></li>
+        </ul>
 
-    <div class="banner-container">
-        <div>
-            <h1>Explore Serenity.</h1>
-            <h2>fffffnfnfnfnfnnfnfnfnf</h2>
-            <p>Choose from Music, Meditation, Yoga </p>
-        </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
     </div>
-
-    <div class="iframe-container">
-        <div class="innerIFrameContainer">
-            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
-            <iframe src="https://www.youtube.com/embed/VKqiYwMhie8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
-        </div>
   </div>
+</nav>
 
-    <div class="tilesContainer">
-        <div class="flex-container">
-            <div>Music</div>
-            <div>Space</div>
-            <div>Nature</div>  
-            <div>Meditation</div>
-            <div>Cindrella, By Michael Jackson</div>
-            <div>The Nile, By Arman Hoque</div>  
-            <div>Yoga</div>
-            <div>Downward Dog</div>
-            <div>Nirvana</div>  
-            <div>Something</div>
-            <div>Something</div>
-            <div>Something</div>  
-        </div>
-    </div>
-    <div class="footerContainer">
-        <footer>
-            © Copyright 2020 Symphony Engineers, All Rights Reserved.
-        </footer>
-    </div>
 
-    
-    
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Welcome to Serenity</h1>      
+    <p>Refresh your mind and soul!</p>
+  </div>
+</div><br><br>
+
+<div id="categoryBar" class="jumbotron">
+  <div class="container text-center">    
+    <p>Featured</p>
+  </div>
+</div><br><br>
+
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Calming Music</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/f77SKdyn-1Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">The Oceanic Paradise: Waves and Horizon</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Meditation</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/ywQ0NkwKPps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Sleep Meditation Story: The Autumn Cottage</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Yoga</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/4pKly2JojMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Quick Morning Yoga: Full Body</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div id="categoryBar" class="jumbotron">
+  <div class="container text-center">    
+    <p><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></p>
+  </div>
+</div><br><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Rainstorm</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/yIQd2Ya0Ziw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">For an anxious mind</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Waterfall</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/YvM-pnzRDYE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Soothing Waterfall with Forest Birds</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Birds</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/rYoZgpAEkFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Morning bird song, share happiness</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div id="categoryBar" class="jumbotron">
+  <div class="container text-center">    
+    <p><a href="../meditationFeature/meditation.html">Meditation</a></p>
+  </div>
+</div><br><br>
+
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Your Secret Treehouse</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/DWOHcGF1Tmc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Dive into your childhood imaginations</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Lucid Dream </div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/QonP2sbizak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Roam through the mighty forest</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Underwater Paradise</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/3AX8O1H6UuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Travel the world of the unseen</div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div id="categoryBar" class="jumbotron">
+  <div class="container text-center">    
+    <p>
+      <a href="../yogaFeature/yoga.html">Yoga</a>
+    </p>
+  </div>
+</div><br><br>
+
+<div class="container">  
+  <div class="row">
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Full Body Stretch</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/2WE-L8iyu0U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">In a hurry? Only 5 minutes!</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Better Than Coffee!</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/9xZcnOjLNZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Engergize only under 10 minutes</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Anxiety and Stress</div>
+        <div class="panel-body"><iframe width="560" height="315" src="https://www.youtube.com/embed/hJbRpHZr_d0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="panel-footer">Remove stress and treat your body</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+
+<footer class="container-fluid text-center">
+  <p> © Copyright 2020 Symphony Engineers, All Rights Reserved.</p>  
+</footer>
+
 </body>
 </html>
