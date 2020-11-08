@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp and Login</title>
+	<link rel="stylesheet" type="text/css" href="signUp.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+		.navbar {
+		  margin-bottom: 50px;
+		  border-radius: 0;
+		  background-color: #42455a;
+		  border-color: #42455a;
+		}
+	
+		.img-responsive-custom { 
+		  width: 300px;
+		  height: 170px;
+		}
+	
+		.navbar :hover { 
+			color: #9492FF !important;
+		}
+	
+		.active-custom a{
+		  background-color: #42455a;
+		  color: #19dafa !important;
+		}
+		
+	   
+		/* Add a gray background color and some padding to the footer */
+		footer {
+		  background-color: pink;
+		  padding: 15px;
+		  height: 50px;
+		  padding-bottom: 25px;
+		}
+	  </style>
+</head>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	  <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>                        
+		</button>
+		<!-- <a class="navbar-brand" href="#"><img src="moon.png"></a> -->
+	  </div>
+	  <div class="collapse navbar-collapse" id="myNavbar">
+		<ul class="nav navbar-nav">
+			<li><a href="../homePage/homePage.html"><img src="moon.png" alt="N/A" width="25px" height="25px"></a></li>
+			<li><a href="../homePage/homePage.html">Home</a></li>
+			<li><a href="../meditationFeature/meditation.html">Meditation</a></li>
+			<li><a href= "../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+			<li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+			<li><a href= "../yogaFeature/yoga.html">Yoga</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		  <li class="active-custom"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="">
+			<h1>Create Account</h1>
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="email" placeholder="Email">
+			<input type="password" name="password" placeholder="Password">
+			<br>
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign In</h1>
+		<input type="email" name="email" placeholder="Email">
+		<input type="password" name="password" placeholder="Password">
+		<!--<a href="#">Forgot Your Password</a>-->
+		<br>
+		<button>Sign In</button>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+</script>
+<body  style="background-color:#42455a;"></body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="container-fluid text-center">
+	<p> © Copyright 2020 Symphony Engineers, All Rights Reserved.</p>  
+</footer>
+</html>
+
+
+
+
+
+
+
+
