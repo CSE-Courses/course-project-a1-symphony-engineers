@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         webView = (WebView) findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www-student.cse.buffalo.edu/CSE442-542/2020-Fall/cse-442f/course-project-a1-symphony-engineers-develop-2/homePage/homePage.html");
+        webView.loadUrl("https://afternoon-spire-76193.herokuapp.com/");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
