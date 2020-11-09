@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="meditation.css">
+    <title>
+    Meditation
+    </title>
+</head>
+<body  style="background-color:#42455a;">
+    <div class="burgerMenu">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <!--<li class="logo"><a href="homePage.html"><img src="moon.png"></a></li>-->
+                <li class="active"><a href="../homePage/homePage.html">Home</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+                <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+                <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="topMenu">
+            <ul>
+            <li class="topImgMoon"><a href="../homePage/homePage.html"><img src="moon.png"></a></li>
+            <li><a href="../homePage/homePage.html">Home</a></li>
+            <li class="current">Meditation</li>
+            <li><a href="../yogaFeature/yoga.html">Yoga</a></li>
+            <li><a href="../calmMusicFeature/calmMusic.html">Calming Music</a></li>
+            <li><a href="../moodQuizFeature/moodQuiz.html">Mood Check</a></li>
+            <li><a href="#" class="signupButton"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="bodycs">
+            <h1>Meditation Tutorials</h1>
+            <p>Here, we'll see different types of meditation and how they are being practiced.</p><br>
+            <h2>How to Meditate for Beginners</h2>
+            <br>
+            <div class="MFB">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/hbfyVu0arXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2>Trancendental Meditation</h2>
+            <br>
+            <br>
+            <div class="TM">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/fO3AnD2QbIg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h2>Mindful Meditation</h2>
+            <br>
+            <div class="MM">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <footer>
+                © Copyright 2020 Symphony Engineers, All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
