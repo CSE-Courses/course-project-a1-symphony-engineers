@@ -1,0 +1,68 @@
+.navbar :hover { 
+  color: #9492FF !important;
+}
+
+.navbar {
+margin-bottom: 50px;
+border-radius: 0;
+background-color: #42455a;
+border-color: #42455a;
+}
+
+
+.active-custom {
+  background-color: #42455a;
+  color: white;
+}
+
+.active-custom a{
+  color: #19dafa !important;
+}
+
+.img-responsive{
+  transition: transform .2s;
+}
+
+
+.header{
+  color:white;
+}
+.headerText{
+  width: 50%;
+  float: left;
+}
+
+.headerText p{
+  color: #919191;
+}
+
+
+/* Remove the jumbotron's default bottom margin */ 
+.jumbotron {
+margin-bottom: 0;
+}
+
+
+.btn{
+  text-decoration: none;
+  padding: 3px 3px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-origin: border-box;
+  background-clip: content-box,border-box;
+  font-size: 20px;
+}
+
+.btn span{
+  display: block;
+  padding: 10px 22px;
+}
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+background-color: pink;
+padding: 15px;
+height: 50px;
+padding-bottom: 25px;
+}
