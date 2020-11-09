@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Serenity</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/warning.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color: #42455a"></bodystyle>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <a class="navbar-brand" href="#"><img src="moon.png"></a> -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav">
+            <li><a href="/"><img src="/images/moon.png" alt="N/A" width="25px" height="25px"></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href= "/meditation">Meditation</a></li>
+            <li><a href="/music">Calming Music</a></li>
+            <li class="active-custom"><a href="/moodcheck">Mood Check</a></li>
+            <li><a href= "/yoga">Yoga</a></li>
+        </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/logout"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon glyphicon-user"></span> <%=`Logged in as ${currentUser.username}`%></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+    
+
+<div class="container">
+    <div class="header">
+        <div class="headerText">
+            <h1> Mood Self-check </h1>
+            <br>
+            <p>This is a self-check tool to help you identify thoughts, feelings and experiences related to depression. It does not consider all experiences or the possible reasons why a person might be having them. The tool cannot provide a diagnosis. Only a professional can make a diagnosis.
+            <br><br>
+
+            There are no right or wrong answers on this quiz.  Please select the answer indicating how often you agree with the statement provided.
+                
+            <br><br>
+                
+            We will not share your answers or any information about you with anyone. Please seek help if you are having suicidal thoughts.  Consider the (United States) National Suicide Prevention Lifeline: 1-800-273-8255.
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <button class="btn quiz"><a href="/quiz"><span>GET STARTED</span></a></button>
+    
+    </div>
+
+    
+    
+<br><br><br><br><br><br><br><br>
+<footer class="container-fluid text-center">
+  <p> © Copyright 2020 Symphony Engineers, All Rights Reserved.</p>  
+</footer>
+
+</body>
+</html>
