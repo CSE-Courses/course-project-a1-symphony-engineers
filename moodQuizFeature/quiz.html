@@ -214,10 +214,10 @@
             
         
          <button class="submit" value="Submit"><span>GET RESULTS</span></button>
-            
+            <br><br><br>
             </form>
             
-            <p>Your grade is: <span id="grade">  </span> </p>
+         
             <p id="grade2"> </p>
             
             <br><br>
@@ -244,12 +244,11 @@
 	   
 	   result = q1+q2+q3+q4+q5+q6+q7+q8;
 	   
-	   document.getElementById("grade").innerHTML = result;
 	   
     
-        if (result <= 17 && result >= 8) {result2 = "neutral/happy."};
-        if (result <= 23 && result >= 18) {result2 = "moderately depressed."};
-        if (result <= 32 && result >= 24) {result2 = "Your results indicate that you may be experiencing some symptoms of depression which may be interfering with your ability to do things in your everyday life.  This may also affect your relationships with family and friends.  Self-care strategies can improve your mood and symptoms to help you get back on your feet."};
+        if (result <= 17 && result >= 8) {result2 = "Your results indicate that you do not have many symptoms of depression.  While you may occasionally feel unmotivated or lacking energy, this is likely an indication of the normal ups and downs associated with life.  Self-care strategies are important in improving your mood and keeping you on your feet."};
+        if (result <= 23 && result >= 18) {result2 = "Your results indicate that you may be experiencing some mild to moderate symptoms of depression which may be interfering with your ability to do things in your everyday life.  You may be feeling unmotivated, lacking energy, and lonely.  Self-care strategies can improve your mood and symptoms to help you get back on your feet."};
+        if (result <= 32 && result >= 24) {result2 = "Your results indicate that you may be experiencing severe symptoms of depression which may be interfering with your ability to do things in your everyday life.  This may also affect your relationships with family and friends.  Self-care strategies can improve your mood and symptoms to help you get back on your feet."};
         
         document.getElementById("grade2").innerHTML = result2; 
 
