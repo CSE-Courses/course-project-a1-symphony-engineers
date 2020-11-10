@@ -1,13 +1,18 @@
 <% layout('layouts/boilerplate1')%>
-<h1>Login</h1>
-<form action="/login" method="POST" class="validated-form" novalidate>
-    <div class="mb-3">
-        <label class="form-label" for="username">Username</label>
-        <input class="form-control" type="text" id="username" name="username" required>
+<div class="row">
+    <h1 style="text-align: center">Login</h1>
+    <div style="width: 30%; margin: 25px auto;">
+        <form action="/login" method="POST" class="validated-form" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="password" id="password" name="password" required>
+            </div>
+            <button class="btn btn-success">Log In</button>
+        </form>
+        <a href="/register">Not a User? Register</a>
     </div>
-    <div class="mb-3">
-        <label class="form-label" for="password">Password</label>
-        <input class="form-control" type="password" id="password" name="password" required>
-    </div>
-    <button class="btn btn-success">Log In</button>
-</form>
+</div>
