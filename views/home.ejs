@@ -57,22 +57,19 @@ function topFunction() {
 
       <% if (!currentUser) {%>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/register"><span class="glyphicon glyphicon-envelope"></span> Sign Up</a></li>
+        <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/login"><span class="glyphicon glyphicon-send"></span> Log In</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-off"></span> Log In</a></li>
       </ul>
       
       <%}else {%>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/logout"><span class="glyphicon glyphicon-off"></span> Log Out</a></li>
       </ul>
       
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon glyphicon-user"></span> <%=`Logged in as ${currentUser.username}`%></a></li>
-      </ul>
-
       <% } %> 
 
     </div>
