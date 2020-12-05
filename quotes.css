@@ -29,6 +29,13 @@ a:hover{
     color: #CD8DEF;
 }
 
+
+.headerText p{
+    color: lightpink;
+    font-size: 20px;
+}
+
+
 .submit{
     text-decoration: none;
     color: #19dafa;
@@ -72,9 +79,6 @@ a:hover{
     text-align: center;
 }
 
-.headerText p{
-    color: #919191;
-}
 
 .container{
     text-align: center;
