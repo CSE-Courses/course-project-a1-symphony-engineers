@@ -22,7 +22,7 @@ public class mapsFragment extends Fragment{
         View view=inflater.inflate(R.layout.fragment_maps, container, false);
         webView = (WebView) view.findViewById(R.id.webview2);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.google.com/maps/search/?api=1&query=pizza");
+        webView.loadUrl("https://www.google.com/maps/search/?api=1&query=relaxation+near+me");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);

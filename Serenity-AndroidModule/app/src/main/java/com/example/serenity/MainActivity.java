@@ -13,7 +13,7 @@ import android.webkit.WebViewClient;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    //public WebView webView;
+    public WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
