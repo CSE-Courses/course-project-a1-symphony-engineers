@@ -22,7 +22,7 @@ class MapController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.google.com/maps/search/?api=1&query=pizza")!
+        let url = URL(string: "https://www.google.com/maps/search/?api=1&query=relaxation+near+me")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
     }
