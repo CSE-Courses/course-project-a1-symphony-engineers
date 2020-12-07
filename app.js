@@ -21,6 +21,7 @@ const yogaContentsRoutes = require('./routes/yogaContents');
 const quizRoutes = require('./routes/quiz');
 const warningRoutes = require('./routes/warning');
 const resultsRoutes = require('./routes/results');
+const quotesRoutes = require('./routes/quotes');
 const { MongoStore } = require('connect-mongo');
 
 const MongoDBStore = require("connect-mongo")(session);
@@ -104,8 +105,7 @@ app.use('/yogaContents',yogaContentsRoutes);
 app.use('/quiz',quizRoutes);
 app.use('/warning',warningRoutes);
 app.use('/results',resultsRoutes);
-
-
+app.use('/quotes',quotesRoutes);
 
 app.get('/',(req,res)=>{
     res.render('home')
