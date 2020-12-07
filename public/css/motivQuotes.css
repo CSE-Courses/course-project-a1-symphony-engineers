@@ -1,0 +1,101 @@
+.navbar :hover { 
+    color: #9492FF !important;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+  background-color: #42455a;
+  border-color: #42455a;
+}
+
+
+.active-custom {
+    background-color: #42455a;
+    color: white;
+}
+
+.active-custom a{
+    color: #19dafa !important;
+}
+
+.img-responsive{
+    transition: transform .2s;
+}
+
+.img-responsive:hover{
+    transform: scale(1.1);
+}
+
+
+.header{
+    color:white;
+}
+.headerText{
+    width: 50%;
+    float: left;
+}
+
+.headerText p{
+    color: #919191;
+}
+
+
+a{
+    text-decoration: none;
+    color: #19dafa;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #CD8DEF;
+}
+
+
+.btn{
+    text-decoration: none;
+    padding: 3px 3px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    font-size: 15px;
+}
+
+.btn span{
+    display: block;
+    padding: 8px 22px;
+}
+
+/* On mouse-over */
+
+.btn:hover{
+    color: #CD8DEF;
+}
+
+.btn:active{
+    background-color: #42455a;
+    text-decoration: none;
+    padding: 3px 3px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#42455a, #42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    font-size: 15px;
+}
+
+.quiz {
+    color: #19dafa;
+    letter-spacing: 3px;
+}
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+  background-color: pink;
+  padding: 15px;
+  height: 50px;
+  padding-bottom: 25px;
+}
