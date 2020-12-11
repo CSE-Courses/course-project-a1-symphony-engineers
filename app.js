@@ -16,8 +16,6 @@ const dialogflow = require('@google-cloud/dialogflow');
 const uuid = require('uuid');
 const bodyParser = require('body-parser');
 
-const quotesRoutes = require('./routes/quotes');
-const chatRoutes = require('./routes/chat');
 const userRoutes = require('./routes/users');  
 const moodcheckRoutes = require('./routes/moodcheck');  
 const meditationRoutes = require('./routes/meditation');
@@ -111,8 +109,6 @@ app.use('/yogaContents',yogaContentsRoutes);
 app.use('/quiz',quizRoutes);
 app.use('/warning',warningRoutes);
 app.use('/results',resultsRoutes);
-app.use('/easterEgg',easterRoutes);
-app.use('/chat', chatRoutes);
 app.use('/quotes',quotesRoutes);
 
 app.get('/',(req,res)=>{
@@ -125,6 +121,12 @@ app.get('/warning',(req,res)=>{
 });
 
 const port = process.env.PORT || 3000;
+
+app.listen(port, ()=>{
+  console.log(`Serving on port ${port}`)
+});
+
+
 
 const sessionId = uuid.v4();
 app.use(bodyParser.urlencoded({
@@ -192,8 +194,7 @@ async function runSample(msg,projectId = 'helperbot-9tgk') {
   return result.fulfillmentText;
 }
 
+const chatRoutes = require('./routes/chat');
+app.use('/chat',chatRoutes);
 
 
-app.listen(port, ()=>{
-    console.log(`Serving on port ${port}`)
-});
