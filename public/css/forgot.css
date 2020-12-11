@@ -1,0 +1,14 @@
+.row h1{
+    color:white;
+}
+
+.row label{
+    color:white;
+}
+
+footer {
+    background-color: pink;
+    padding: 15px;
+    height: 50px;
+    padding-bottom: 25px;
+  }
