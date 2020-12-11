@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SerenityController.swift
 //  Serenity
 //
 //  Created by Anant Patni on 10/18/20.
@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class SerenityController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
     
